@@ -1,0 +1,82 @@
+<!--HTML FINALIZADO-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowOfMillions</title>  <!-- 1.Dar nome pra pagina onde vai aparecer na aba de tarefa-->
+    <link rel="stylesheet" href="index.css">  <!--2.Lincar o CSS-->
+    <!--esta faltando o link href-->
+    
+</head>
+<body>
+    <img src="ImagensShow/logoShow.png" alt="img"> <!--logo com a moeda-->
+    <main>
+        <div id="info">
+            <div class="intro">
+                <p class= "intro-title">WELCOME TO THE MILLION SHOW</p>
+
+                <p class="intro-text">
+                    Here you will have the opportunity to win one of four surprise prizes.
+                    <br /><br/> But to do this you need to get two or more of the questions correct. <!--O br faz a quebra de linha-->
+                    <br /><br/> If you get two questions right you get the first prize, four get the second, six get the third and by getting all eight questions right you get the best prize.
+                    <br /><br/> You can ask for help once and you will receive a tip on the correct answer.
+                    <br /><br/> Remember that at any time you can ask to stop the game with the last prize you won.
+                    <br /><br/> But if you get the question wrong you lose everything.
+                    <br /><br/> Ready?! So click here to start playing and win one of the prizes.   
+                </p>
+            </div>
+            <button id="start" onclick="start()">start</button>
+            <audio src="som/somEntrada.mp3" id="audio"></audio><!--ver onde colocar esse som de entrada pra aparecer junto com o regulamento-->         
+        </div>
+
+        <div class="hide" id="game">
+            <div class="game-style">
+                <div class="status">
+                    <div id="pontuacao"></div>
+                    <div class="parar">
+                        <button id="parar" onclick="parar()">parar</button>
+                    </div>
+                    <div class="dica">
+                        <button id="dica" onclick="dica()">dica</button>
+                    </div>
+                </div>
+
+                <div class="game-scope">
+                    <div id="questoes">
+                        <p id="quest"></p>
+                    </div>
+                    <div class="coluna">
+                        <button id="bt0" onclick="nextQuestion(0)"></button>
+                        <button id="bt1" onclick="nextQuestion(1)"></button>
+                        <button id="bt2" onclick="nextQuestion(2)"></button>
+                        <button id="bt3" onclick="nextQuestion(3)"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hide" id="winner">
+            <p id="pontosWinner"></p>
+            <button class="voltar" onclick="zerar()">Voltar</button>
+        </div>
+
+        <div class="hide" id="lose">
+            <p id="pontosLose"></p>
+            <button class="voltar" onclick="zerar()">Voltar</button>
+        </div>
+
+    </main>
+    <script src="questoes.js"></script><!--sao as minhas perguntas-->
+    <script src="index.js"></script>
+
+</body>
+
+<footer>
+    <p>&copy;RenanGandra</p> <!--3.Criar direitos autorais-->
+</footer>
+
+</html>
+
