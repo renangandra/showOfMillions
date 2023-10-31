@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("ImagensShow/fotoOuro.jpg");/*acho que essa eh a foto quando vem as perguntas*/
+    background-image: url("fotoOuro.jpg");/***acho que essa eh a foto quando vem as perguntas***/
     background-repeat: no-repeat;
     overflow: hidden;
     display: flex;
@@ -227,7 +227,7 @@ main {
         margin-top: 1em;
     }
     body {
-        background-image: url("ImagensShow/fundo9.jpg"); /*a imagem de fundo do dinheiro*/
+        background-image: url("cortinas.jpg"); /*a imagem de fundo do dinheiro*/
         background-repeat: no-repeat;
         overflow: hidden;
         display: flex;

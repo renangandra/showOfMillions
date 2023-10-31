@@ -1,6 +1,6 @@
 /*QUESTOES FINALIZADAS. Pensar se vou colocar mais perguntas se o jogo for resetado e talvez embaralhar fazendo Shuffe*/
 
-const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos com as perguntas e respostas.
+const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com as perguntas e respostas.
         questao: "What is the name of the Mexican currency?",
         alternativas: [{
                 texto: "Dollar"
@@ -35,8 +35,7 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 texto: "Aries"
             }
         ]
-    },
-    {
+    }, {
             questao: "Which film won the most Oscars?",
             alternativas: [{
                 texto: "Lord of the Rings: The Return of the Kingo"
@@ -53,8 +52,7 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 texto: "West Side Story"
             }
         ]
-    },
-    {
+    }, {
             questao: "What is the meaning of the abbreviation HTTP?",
             alternativas: [{
                 texto: "Hypertext Transfer Protocol"
@@ -71,8 +69,7 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 texto: "Hyperlink Transmission Protocol"
             }
         ]
-    },
-    {
+    }, {
             questao: "How many states share a border with Germany",
             alternativas: [{
                 texto: "8"
@@ -89,8 +86,7 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 valor: 500
             }
         ]
-    },
-    {
+    }, {
             questao: "What is the name of the capital of Brazil?",
             alternativas: [{
                 texto: "Sao Paulo"
@@ -107,9 +103,8 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 texto: "Rio de Janeiro"
             }
         ]
-    },
-    {
-            questao: "How many days does the month of February have in 2023?",
+    }, {
+            questao: "How many days does the month of February have in 2024?",
             alternativas: [{
                 texto: "28"
             },
@@ -125,8 +120,8 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 texto: "31"
             }
         ]
-    },
-    {
+    },  {
+
             questao: "To which continent does Bhutan belong?",
             alternativas: [{
                 texto: "Asia"
@@ -143,6 +138,6 @@ const questoes = [{ //sera array [] e dentro dela vou vou colocar varios objetos
                 texto: "South America"
             }
         ]
-    },
+    }
 
 ]

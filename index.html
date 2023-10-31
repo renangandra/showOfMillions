@@ -1,16 +1,17 @@
 <!--HTML FINALIZADO-->
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShowOfMillions</title>  <!-- 1.Dar nome pra pagina onde vai aparecer na aba de tarefa-->
-    <link rel="stylesheet" href="index.css">  <!--2.Lincar o CSS-->
-    <!--esta faltando o link href-->
+    <link rel="stylesheet" href="css/index.css">  <!--2.Lincar o CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> <!--***O QUE ISSO FAZ***-->
     
 </head>
 <body>
-    <img src="ImagensShow/logoShow.png" alt="img"> <!--logo com a moeda-->
+    <img src="assets/logo.png" alt="img"> <!--logo com a moeda-->
     <main>
         <div id="info">
             <div class="intro">
@@ -27,7 +28,7 @@
                 </p>
             </div>
             <button id="start" onclick="start()">start</button>
-            <audio src="som/somEntrada.mp3" id="audio"></audio><!--ver onde colocar esse som de entrada pra aparecer junto com o regulamento-->         
+            <audio src="assets/temaShow.mp3" id="audio"></audio><!--ver onde colocar esse som de entrada pra aparecer junto com o regulamento-->         
         </div>
 
         <div class="hide" id="game">
@@ -69,14 +70,14 @@
         </div>
 
     </main>
-    <script src="questoes.js"></script><!--sao as minhas perguntas-->
-    <script src="index.js"></script>
+
+    <script src="js/questoes.js"></script><!--sao as minhas perguntas-->
+    <script src="js/index.js"></script>
+
+    <footer>
+        <p>&copy;RenanGandra</p> <!--3.Criar direitos autorais-->
+    </footer>
 
 </body>
-
-<footer>
-    <p>&copy;RenanGandra</p> <!--3.Criar direitos autorais-->
-</footer>
-
 </html>
 
