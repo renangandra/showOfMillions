@@ -1,4 +1,4 @@
-/*QUESTOES FINALIZADAS. Pensar se vou colocar mais perguntas se o jogo for resetado e talvez embaralhar fazendo Shuffe*/
+/***QUESTOES FINALIZADAS. Pensar se vou colocar mais perguntas se o jogo for resetado e talvez embaralhar fazendo Shuffe***/
 
 const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com as perguntas e respostas.
         questao: "What is the name of the Mexican currency?",
@@ -14,7 +14,7 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
             {
                 texto:"Peso",   
                 correct: true,
-                valor: 50
+                valor: 25
             }
         ]
     },
@@ -27,9 +27,9 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
                 texto: "Cancer"
             },
             {
-                texto: "Capricorn"
+                texto: "Capricorn",
                 correct: true,
-                valor: 100
+                valor: 50
             },
             {
                 texto: "Aries"
@@ -44,9 +44,9 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
                 texto: "Avatar"
             },
             {
-                texto: "Titanic"
+                texto: "Titanic",
                 correct: true,
-                valor: 150
+                valor: 75
             },
             {
                 texto: "West Side Story"
@@ -55,15 +55,15 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
     }, {
             questao: "What is the meaning of the abbreviation HTTP?",
             alternativas: [{
-                texto: "Hypertext Transfer Protocol"
+                texto: "Hypertext Transfer Protocol",
                 correct: true,
-                valor: 200
+                valor: 100
             },
             {
-                texto: "Hypertext Transmission Protocol"
+                texto: "Hyperlink Transfer Protocol"
             },
             {
-                texto: "Hyperlink Transfer Protocol"     
+                texto:  "Hypertext Transmission Protocol"    
             },
             {
                 texto: "Hyperlink Transmission Protocol"
@@ -72,35 +72,38 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
     }, {
             questao: "How many states share a border with Germany",
             alternativas: [{
-                texto: "8"
+                texto: "11"
+                
             },
             {
                 texto: "7"
             },
             {
-                texto: "11"     
+                texto: "8"     
             },
             {
-                texto: "9"
+                texto: "9",
                 correct: true,
-                valor: 500
+                valor: 125
             }
         ]
+    
+        
     }, {
             questao: "What is the name of the capital of Brazil?",
             alternativas: [{
-                texto: "Sao Paulo"
+                texto: "São Paulo"
             },
             {
                 texto: "Curitiba"
             },
             {
-                texto: "Brasilia" 
-                correct: true,
-                valor: 600    
+                texto: "Rio de Janeiro"     
             },
             {
-                texto: "Rio de Janeiro"
+                texto: "Brasília",
+                correct: true,
+                valor: 150
             }
         ]
     }, {
@@ -109,9 +112,9 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
                 texto: "28"
             },
             {
-                texto: "29"
+                texto: "29",
                 correct: true,
-                valor: 700
+                valor: 175
             },
             {
                 texto: "30"                
@@ -124,9 +127,9 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
 
             questao: "To which continent does Bhutan belong?",
             alternativas: [{
-                texto: "Asia"
+                texto: "Asia",
                 correct: true,
-                valor: 800
+                valor: 300
             },
             {
                 texto: "Africa"

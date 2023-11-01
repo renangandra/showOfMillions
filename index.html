@@ -28,7 +28,10 @@
                 </p>
             </div>
             <button id="start" onclick="start()">start</button>
-            <audio src="assets/temaShow.mp3" id="audio"></audio><!--ver onde colocar esse som de entrada pra aparecer junto com o regulamento-->         
+            <audio src="assets/temaShow.mp3" id="audio"></audio><!--ver onde colocar esse som de entrada pra aparecer junto com o regulamento-->   
+            <audio src="assets/incorrectAnswer.mp3" id="audioIncorrect"></audio><!--criei essa id pra vincular o som se o gamer selecionar resposta errada. Vincular index.js perder.-->
+            <audio src="assets/musicaVencedor.mp3" id="musicaVencedor"></audio>     
+            <audio src="assets/musicSentimental.mp3" id="musicSentimental"></audio> 
         </div>
 
         <div class="hide" id="game">
@@ -36,10 +39,10 @@
                 <div class="status">
                     <div id="pontuacao"></div>
                     <div class="parar">
-                        <button id="parar" onclick="parar()">parar</button>
+                        <button id="parar" onclick="parar()">stop</button>
                     </div>
                     <div class="dica">
-                        <button id="dica" onclick="dica()">dica</button>
+                        <button id="dica" onclick="dica()">tip</button>
                     </div>
                 </div>
 
@@ -61,12 +64,13 @@
 
         <div class="hide" id="winner">
             <p id="pontosWinner"></p>
-            <button class="voltar" onclick="zerar()">Voltar</button>
+            <button class="voltar" onclick="zerar()">back</button>
         </div>
 
         <div class="hide" id="lose">
             <p id="pontosLose"></p>
-            <button class="voltar" onclick="zerar()">Voltar</button>
+            <button class="voltar" onclick="zerar()">back</button>
+            
         </div>
 
     </main>
