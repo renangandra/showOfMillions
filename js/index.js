@@ -158,7 +158,7 @@ function dica() {
         document.getElementById("dica").classList.add("hide");
     }
     if (index == 4) {
-        alert("Adding the ODD numbers and dividing by three gives you the answer");
+        alert("Adding the ODD numbers of answers and dividing by three gives you the answer");
         document.getElementById("dica").classList.add("hide");
     }
     if (index == 5) {
