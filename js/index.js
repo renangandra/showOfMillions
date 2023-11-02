@@ -2,9 +2,10 @@ function start() {
     document.getElementById("game").classList.remove("hide");
     document.getElementById("start").classList.add("hide");
     document.getElementById("info").classList.add("hide");
-    let musica = document.getElementById("audio");
+    document.getElementById("audio").pause();
+    let musica = document.getElementById("musicaDecorrerJogo");
     musica.play();
-
+    document.body.classList.add("background-start");
 }
 
 let index = 0;
@@ -62,8 +63,38 @@ function proximo() {
 
 function parar() {
     vencedor();
-    //***CRIAR REGRAS DO PRIZE 2, PRIZE3, PRIZE4  ***/
+    let prize = null;
+    
+    if (score === 75 || score === 125 || score === 150) {
+        prize = "Ironhack Prize 4";
+    } else if (score ===  250 || score === 375) {
+        prize = "Ironhack Prize 3";
+    } else if (score === 525|| score === 700) {
+        prize = "Ironhack Prize 2";
+    } else if (score === 1000) {
+        prize = "Ironhack Prize 1";
+    }
+
+    if (prize) {
+        document.getElementById("game").classList.add("hide");
+        document.getElementById("winner").classList.remove("hide");
+        document.getElementById("pontosWinner").innerHTML = `Congratulations !!!  <br> YOU WON  ${score}.000 =  ${prize}`;
+        this.musicaDecorrerJogo.pause();
+        let musica = document.getElementById("musicaVencedor");
+        musica.play();
+    } else {
+        document.getElementById("game").classList.add("hide");
+        document.getElementById("winner").classList.remove("hide");
+        document.getElementById("pontosWinner").innerHTML = "Congratulations !!!" + "<br>" + "YOU WON " + score + ".000";
+        this.musicaDecorrerJogo.pause();
+        let musica = document.getElementById("musicaVencedor");
+        musica.play();
+    }
 }
+
+// function vencedor() {
+    
+// }
 
 function zerar() {
     document.getElementById("game").classList.add("hide");
@@ -75,6 +106,7 @@ function zerar() {
     document.getElementById("info").classList.remove("hide");
     document.getElementById("winner").classList.add("hide");
     document.getElementById("lose").classList.add("hide");
+ 
     proximo();
 }
 
@@ -83,29 +115,29 @@ function vencedor() {
     document.getElementById("winner").classList.remove("hide");
     document.getElementById("pontosWinner").innerHTML = "Congratulations !!!" + "<br>" + "YOU WON " + score + ".000" + " =" + "<br>" + "Ironhack Prize 1";
    //***CRIAR REGRAS DO PRIZE 2, PRIZE3, PRIZE4  ***/
-    this.audio.pause();
+    this.musicaDecorrerJogo.pause();
     let musica = document.getElementById("musicaVencedor");
     musica.play();
+    document.body.classList.remove("background-start");
+    document.body.classList.add("background-vencedor");
     //****COLOCAR MUSICA VENCEDOR ****/
-
-
 }
 
 function perder() {
     document.getElementById("game").classList.add("hide");
     document.getElementById("lose").classList.remove("hide");
     document.getElementById("pontosLose").innerHTML = "YOU LOST EVERYTHING";
-    this.audio.pause();//pra pausar o audio de entrada, eu o vinculei com ID no HTML
+    this.musicaDecorrerJogo.pause();//pra pausar o audio de entrada, eu o vinculei com ID no HTML
     let musica = document.getElementById("audioIncorrect"); //respondendo errado ele para a musica do jogo e puxa esta ("audioIncorrect")
     musica.play();
-    // this.audioIncorrect.pause();
-    // let musica = document.getElementById("musicaSentimental");
-    // musica.play();
-    
-    /**DAR UM ESPACO COM TIMER PRA TOCAR O MUSICA DA SELECAO DA RESPOSTA ERRADA E DEPOIS VINCULAR COM A DE BAIXO - MUSICA SENTIMENTAL ***/
-    /***COMO COLOCAR AQUI A MUSICA SENTIMENTAL***/
 
-    
+    // Adicionar um ouvinte de evento para detectar quando o áudio "audioIncorrect" terminar de tocar
+    musica.addEventListener("ended", function() {
+        let musicSentimental = document.getElementById("musicSentimental");
+        musicSentimental.play()
+
+    })
+   
 }
 
 function dica() {

@@ -8,15 +8,9 @@
 body {
     background-image: url("fotoOuro.jpg");/***acho que essa eh a foto quando vem as perguntas***/
     background-repeat: no-repeat;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-footer > p {
-    font-size: 28px;
-    color: white;
 }
 
 #game {
@@ -69,6 +63,7 @@ footer > p {
     font-family: "Roboto", sans-serif;
     padding: .5em;
     margin-top: 1em;
+    
 }
 
 #start {
@@ -137,6 +132,7 @@ main {
 }
 
 #questoes {
+    width: 100%;
     align-items: center;
 }
 
@@ -151,14 +147,15 @@ main {
     width: 80vw;
 }
 
-.voltar {
-    background-color: blue;
+.voltar {/*botao back*/
+    background-color: rgb(47, 12, 241);
     height: 150px;
     width: 400px;
     border-radius: 45px;
     box-shadow: 0px 5px 10px 0px black;
     font-size: 3em;
     margin: 1.2em
+    
 }
 
 #pontosLose {
@@ -181,7 +178,7 @@ main {
     width: 100%;
     border: solid 5px white;
     font-size: 3em;
-    background-color: yellow;
+    background-color: rgb(189, 15, 29);
     color: black;
     text-align: center;
     text-transform: uppercase;
@@ -208,17 +205,20 @@ main {
     #bt1,
     #bt2,
     #bt3 {
-        width: 23.5%;
+        width: 48%;
         height: 50px;
         font-size: 2em;
         padding: .1em;
         margin-top: 1em;
+        text-align: center;
+        line-height: 0;
+        padding: 2em 0;        
     }
     #quest {
         font-size: 3em;
         padding: 1em;
         margin-top: 1em;
-        width: 90%;
+        width: 92%;
     }
     #dica,
     #parar {
@@ -226,12 +226,29 @@ main {
         padding: .5em;
         margin-top: 1em;
     }
+
+    footer > p {
+        font-size: 28px;
+        color: rgb(28, 31, 32);
+        font-weight: bold;
+    }
+
     body {
         background-image: url("cortinas.jpg"); /*a imagem de fundo do dinheiro*/
+        background-size: cover; /* Preencher a tela inteira */
         background-repeat: no-repeat;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .background-vencedor { /*adicionei uma classe aqui no CSS ao elemento que sera o novo plano de fundo. chamei essa classe de "background-vencedor" por exemplo.*/
+        background-image: url("imgStartOuro.jpg");
+        background-size: cover; /* Preencher a tela inteira */
+        background-repeat: no-repeat; /* Evitar repetições */
+    }
+    .background-start {
+        background-image: url("fotoNotaDollar.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }

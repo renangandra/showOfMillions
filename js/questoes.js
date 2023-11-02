@@ -12,7 +12,7 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
                 texto: "Real"
             },
             {
-                texto:"Peso",   
+                texto: "Peso",   
                 correct: true,
                 valor: 25
             }
@@ -41,12 +41,12 @@ const questoes = [{ //sera array [] e dentro dela vou colocar varios objetos com
                 texto: "Lord of the Rings: The Return of the Kingo"
             },
             {
-                texto: "Avatar"
-            },
-            {
                 texto: "Titanic",
                 correct: true,
                 valor: 75
+            },
+            {
+                texto: "Avatar" 
             },
             {
                 texto: "West Side Story"
